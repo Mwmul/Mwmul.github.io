@@ -111,7 +111,7 @@ a {
   .about p {
     padding: 15px;
     padding-top: 0;
-    padding-left: 25px;
+    padding-left: 0px;
     animation: fadein 2s;
     color: rgba(221, 221, 221, 0.6);
     line-height: 24px; }
@@ -147,14 +147,15 @@ a {
   to {
     letter-spacing: 10px;
     opacity: 1; } }
-.academic {
+.content {
   animation: fadein 3s;
   color: rgba(221, 221, 221, 0.4); }
-  .academic h3 {
+  .content h3 {
     color: rgba(221, 221, 221, 0.5);
     font-family: roboto;
     font-weight: bold;
     letter-spacing: 3px; }
+
 
 .portfolio {
   padding: 20px;
