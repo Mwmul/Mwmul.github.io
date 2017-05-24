@@ -124,7 +124,7 @@ a {
   .about li {
     margin-bottom: 5px;
     animation: fadein 2s;
-    color: inherit; }
+    color: red; }
 
 @-webkit-keyframes fadein {
   0% {
