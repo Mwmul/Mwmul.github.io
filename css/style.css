@@ -114,17 +114,15 @@ a {
     padding-left: 0px;
     animation: fadein 2s;
     color: rgba(221, 221, 221, 0.6);
-    line-height: 24px;
-    color: inherit; }
-  .about h3 {   
+    line-height: 24px; }
+  .about h3 { 
     padding: 15px;
     font-size: 20px;
     color: rgba(221, 221, 221, 0.95); 
     animation: fadein 2s; }
   .about li {
     margin-bottom: 5px;
-    animation: fadein 2s;
-    color: red; }
+    animation: fadein 2s; }
 
 @-webkit-keyframes fadein {
   0% {
@@ -193,9 +191,10 @@ a {
     background-position: center;
     background-size: cover; }
   .portfolio .three {
-    background: url("http://i.imgur.com/Sv7UQEs.png");
+    background: url('https://i.gyazo.com/f4afa3780fd7d2eabf4a48aace7aa2c5.png');
     background-size: cover;
-    background-position: center; }
+    background-position: center; 
+  }
   .portfolio h2 {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -215,9 +214,9 @@ a {
     .portfolio a:hover {
       background: rgba(255, 255, 255, 0.1); }
   .portfolio p {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     animation: none;
-    animation: fadeinTwo 3s; }
+    animation: fadeinTwo 3s;}
   .portfolio hr {
     animation: fadeinTwo 4s;
     width: 100%;
