@@ -114,15 +114,17 @@ a {
     padding-left: 0px;
     animation: fadein 2s;
     color: rgba(221, 221, 221, 0.6);
-    line-height: 24px; }
-  .about h3 {
+    line-height: 24px;
+    color: inherit; }
+  .about h3 {   
     padding: 15px;
     font-size: 20px;
     color: rgba(221, 221, 221, 0.95); 
     animation: fadein 2s; }
   .about li {
     margin-bottom: 5px;
-    animation: fadein 2s; }
+    animation: fadein 2s;
+    color: inherit; }
 
 @-webkit-keyframes fadein {
   0% {
