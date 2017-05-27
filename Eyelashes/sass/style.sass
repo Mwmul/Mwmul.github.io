@@ -1,0 +1,331 @@
+*
+	font-family: 'Roboto', sans-serif
+	margin: 0
+	box-sizing: border-box
+a
+	color: inherit
+	text-decoration: none
+
+header
+	width: 100%
+	overflow: hidden
+	padding-top: 15px
+	padding-bottom: 15px
+	.title
+		width: 100%
+		max-width: 345px
+		text-align: center
+		margin: auto
+		img
+			width: 100%
+	.wide
+		width: 100%
+		display: flex
+		padding-top: 20px
+		padding-bottom: 20px
+		ul
+			list-style: none
+			padding: 0
+			margin: auto
+			display: inline-block
+			li
+				float: left
+				a
+					padding: 10px 20px 10px 20px
+					display: inline-block
+					font-weight: bold
+					letter-spacing: 2px
+					font-size: 12px
+					font-family: 'Roboto', sans-serif
+					transition: 100ms
+					&:hover
+						color: #FAC2B2
+				hr
+					width: 30px
+					margin: 17px 20px 10px 19px
+					border: none
+					height: 2px
+					background: #FAC2B2
+	.narrow
+		width: 100%
+		text-align: center
+		display: none
+		.menu-btn-narrow
+			padding: 5px
+			margin: auto
+			.menu
+				margin-left: 10px
+				margin-right: 10px
+			&:hover
+				cursor: pointer
+			&:hover > .menu
+				color: #FAC2B2
+		i
+			padding: 5px
+		ul
+			width: 100%
+			overflow: hidden
+			display: none
+			list-style: none
+			padding: 0
+			li
+				padding: 10px
+				&:hover
+					color: #FAC2B2
+		hr
+			width: 10%
+			border: none
+			height: 2px
+			margin: auto
+			background: #FAC2B2
+			margin:
+				top: 20px
+				bottom: 10px
+	@media screen and (max-width:520px)
+		.wide
+			display: none
+		.narrow
+			display: block
+.intro
+	width: 100%
+	overflow: hidden
+	margin: auto
+	text-align: center
+	padding-bottom: 40px
+	img
+		width: 100%
+		max-height: 400px
+		object-fit: cover
+		box-shadow: 0px 1px 16px -5px rgba(0,0,0,0.75)
+	p
+		text-align: center
+		padding: 50px
+		padding-top: 25px
+		padding-bottom: 20px
+		letter-spacing: 1px
+	h1
+		text-align: center
+		margin-top: 30px
+		font-weight: 400
+	a
+		display: inline-block
+		margin: auto
+		border: solid 1px
+		margin-bottom: 10px
+		background: #FAC2B2
+		color: white
+		padding: 15px 25px 15px 25px
+		&:hover > i
+			opacity: 1
+			margin-left: 15px
+		i
+			margin-left: -3px
+			transition: 200ms
+			display: inline-block
+			transform-origin: center
+			transform: scale(1.5)
+			opacity: 0
+.featured
+	width: 100%
+	overflow: hidden
+	margin-bottom: 20px
+	
+	.feature
+		width: 33.33%
+		background: rgba(0,0,0,0.1)
+		float: left
+		height: 220px
+		border-top: solid 2px #FAC2B2
+		border-bottom: solid 2px #FAC2B2
+		h3
+			display: inline-block
+			background: rgba(0,0,0,0.5)
+			height: 100%
+			width: 100%
+			color: white
+			text-align: center
+			line-height: 220px
+			font-weight: 400
+			transition: 200ms
+			&:hover
+				background: rgba(0,0,0,0.2)
+
+	.one
+		background: url('http://i.imgur.com/7n56CIv.png')
+		background-position: center
+		background-size: cover
+	.two
+		background: url('http://i.imgur.com/0A5rSUG.png')
+		background-position: center
+		background-size: cover
+	.three
+		background: url('http://i.imgur.com/nod3xhe.png')
+		background-position: center
+		background-size: cover
+	@media screen and (max-width:520px)
+		.feature
+			width: 100%
+			float: none
+			border-top: solid 1px #FAC2B2
+			border-bottom: solid 1px #FAC2B2
+.reviews
+	width: 100%
+	overflow: hidden
+	.inner
+		width: 100%
+		max-width: 1000px
+		margin: auto
+		padding: 10px
+		overflow: hidden
+		text-align: center
+		h1
+			font-weight: bold
+			font-size: 26px
+			opacity: 0.8
+			margin-bottom: 30px
+			margin-top: 10px
+			display: inline-block
+			hr
+				width: 50px
+				display: inline-block
+				margin: 20px
+				margin-bottom: 6px
+				margin-top: 0
+				border: none
+				height: 2px
+				background: rgb(250, 194, 178)
+				
+		p
+			margin-bottom: 25px
+			padding:
+				left: 100px
+				right: 100px
+		.opinion
+			width: 33%
+			float: left
+			text-align: center
+			padding: 25px
+			img
+				width: 100px
+				height: 100px
+				object-fit: cover
+				border-radius: 100%
+				box-shadow: 0px 3px 20px -2px rgba(0,0,0,0.57)
+			p
+				margin-top: 10px
+				padding: 0
+				i
+					color: rgb(250, 194, 178)
+					margin-right: 5px
+			h3
+				margin-top: 10px
+				font-weight: 400
+
+		@media screen and (max-width:500px)
+			.opinion
+				width: 100%
+		@media screen and (max-width:450px)
+			p
+				padding:
+					left: 20px
+					right: 20px
+			h1
+				font-size: 23px
+				padding-left: 10px
+				padding-right: 10px
+				hr
+					width: 20px
+					margin: 10px
+					margin-bottom: 6px
+.gallery
+	width: 100%
+	max-width: 1000px
+	overflow: hidden
+	margin: auto
+	border-top: solid 2px rgb(250, 194, 178)
+	padding-top: 20px
+	padding-bottom: 20px
+	ul
+		width: 100%
+		list-style: none
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li
+			width: 19.9%
+			min-width: 100px
+			background: rgb(250, 194, 178)
+			overflow: hidden
+			max-height: 178px
+			img
+				width: 100%
+				padding: 2px
+				background: white
+				margin-bottom: -5px
+				&:hover
+					opacity: 0.3
+					cursor: pointer
+		@media screen and (max-width:500px)
+			li
+				width: 32%
+		@media screen and (max-width:320px)
+			li
+				width: 49%
+footer
+	width: 100%
+	padding-top: 20px
+	padding-bottom: 20px
+	background: rgba(250, 194, 178, 0.8)
+	border-top: solid 2px rgb(250, 194, 178)
+	.inner
+		width: 100%
+		max-width: 1000px
+		margin: auto
+		color: white
+		overflow: hidden
+		p
+			padding: 20px
+		ul
+			padding: 0
+			list-style: none
+			li
+				float: left
+				padding: 20px
+				letter-spacing: 2px
+				font-size: 11px
+				a
+					&:hover
+						opacity: 0.8
+		h3
+			float: right
+			font-weight: 400
+			padding-right: 20px
+		.social
+			width: 100%
+			clear: both
+			i
+				font-size: 20px
+	@media screen and (max-width:500px)
+		p
+			text-align: center
+
+		ul
+			width: 100%
+			li
+				width: 100%
+				text-align: center
+		h3
+			text-align: center
+			width: 100%
+			float: none
+			padding-left: 20px
+			font-size: 30px
+	
+.sched
+	width: 100%
+	max-width: 1000px
+	margin: auto
+	iframe
+		width: 100%
+		height: 300px
