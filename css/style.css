@@ -92,6 +92,7 @@ a {
   max-width: 490px;
   display: none;
   position: absolute;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform-origin: center;
