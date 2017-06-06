@@ -28,7 +28,7 @@ a {
 @-webkit-keyframes loadIn {
   0% {
     opacity: 0; }
-  40% {
+  20% {
     opacity: 0; }
   100% {
     opacity: 1; } }
@@ -41,7 +41,7 @@ a {
   transition: 0.7s linear;
   padding: 40px;
   overflow: hidden;
-  animation: loadIn 2s; }
+  animation: loadIn 1s; }
   .container h1 {
     color: #ddd;
     letter-spacing: 3px;
@@ -90,7 +90,6 @@ a {
 .about {
   width: 100%;
   max-width: 490px;
-  height: 440px;
   display: none;
   position: absolute;
   top: 50%;
@@ -110,8 +109,6 @@ a {
     animation: slidein 1.5s; }
   .about p {
     padding: 15px;
-    padding-top: 0;
-    padding-left: 0px;
     animation: fadein 2s;
     color: rgba(221, 221, 221, 0.6);
     line-height: 24px; }
@@ -165,7 +162,8 @@ a {
   margin: auto;
   transform-origin: center;
   text-align: left;
-  color: rgba(221, 221, 221, 0.8); }
+  color: rgba(221, 221, 221, 0.8);
+  animation: fadein 1.5s linear }
   .portfolio h1 {
     text-align: left;
     padding: 20px;
@@ -177,55 +175,34 @@ a {
     letter-spacing: 10px;
     color: rgba(221, 221, 221, 0.95);
     animation: slidein 1.5s; }
-  .portfolio .project {
-    width: 100%;
-    height: 170px;
-    border: solid 1px rgba(255, 255, 255, 0.1);
-    animation: fadeinTwo 2s; }
-  .portfolio .one {
-    background: url("http://i.imgur.com/PpKUIt7.jpg");
-    background-position: center;
-    background-size: cover; }
-  .portfolio .two {
-    background: url("http://i.imgur.com/6ZCqC8U.jpg");
-    background-position: center;
-    background-size: cover; }
-  .portfolio .three {
-    background: url('https://i.gyazo.com/f4afa3780fd7d2eabf4a48aace7aa2c5.png');
-    background-size: cover;
-    background-position: center; 
-  }
-  .portfolio h2 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    animation: fadeinTwo 3s;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.95); }
-  .portfolio a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    display: inline-block;
-    color: inherit;
-    border: solid 1px;
-    transition: 0.3s;
-    animation: fadeinTwo 3s; }
+    
+    .portfolio .project {
+      overflow: hidden;
+      border-bottom: solid 2px rgba(172, 182, 182, 0.6);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .portfolio a {
+      display: inline-block;
+      padding: 10px 20px 10px 20px;
+      border: solid 1px rgb(172, 182, 182);
+    }
     .portfolio a:hover {
-      background: rgba(255, 255, 255, 0.1); }
-  .portfolio p {
-    margin-bottom: 30px;
-    animation: none;
-    animation: fadeinTwo 3s;}
-  .portfolio hr {
-    animation: fadeinTwo 4s;
-    width: 100%;
-    height: 3px;
-    border-left: none;
-    border-right: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-top: none; }
+      background: rgba(255,255,255,0.2);
+    }
+    .portfolio img {
+      width: 100%;
+      object-fit: cover;
+      min-height: 150px;
+      border: solid 1px black;
+    }
+    .portfolio h3 {
+      padding-top: 10px;
+      padding-bottom: 10px; 
+    }
+    .portfolio p {
+      padding-bottom: 20px;
+    }
 
 .contact {
   width: 100%;
