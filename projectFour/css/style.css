@@ -1,0 +1,328 @@
+* {
+  font-family: "Jaldi", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+* ul {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: #F5F4F2;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+}
+.wrapper .expand {
+  height: auto;
+}
+.wrapper header {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper header .logo {
+  height: 45px;
+}
+.wrapper header .logo h1 {
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+.wrapper header .logo h1 span {
+  color: #D5351D;
+}
+.wrapper header nav {
+  width: auto;
+  overflow: hidden;
+}
+.wrapper header nav ul {
+  height: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.wrapper header nav ul li {
+  float: left;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 100ms;
+}
+.wrapper header nav ul li:hover {
+  color: #D5351D;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.wrapper #menu-btn {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .wrapper header {
+    display: block;
+    height: 110px;
+  }
+  .wrapper header .logo {
+    text-align: center;
+    border-bottom: solid 2px #d5351d;
+    margin-bottom: 10px;
+  }
+  .wrapper header ul {
+    width: 100%;
+  }
+  .wrapper header ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper #menu-btn {
+    display: block;
+  }
+}
+.wrapper .one {
+  height: 520px;
+  width: 100%;
+  background: url("http://www.blogcdn.com/www.autoblog.com/media/2008/12/gtr-engine-bay.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 0px 5px 2000px rgba(0, 0, 0, 0.55);
+  color: #F5F4F2;
+}
+.wrapper .one .inner {
+  width: 100%;
+  padding: 70px;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.wrapper .one .inner p {
+  font-family: "Raleway", sans-serif;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.wrapper .one .inner h1 {
+  letter-spacing: 4px;
+  font-size: 85px;
+  line-height: 65px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.wrapper .one .inner h1 span {
+  color: #d5351d;
+}
+.wrapper .one .inner a {
+  display: inline-block;
+  background: #d5351d;
+  padding: 10px 20px;
+  border: solid 1px #d5351d;
+  transition: 100ms;
+}
+.wrapper .one .inner a i {
+  margin-left: 10px;
+}
+.wrapper .one .inner a:hover {
+  background: #F5F4F2;
+  color: #d5351d;
+  border: solid 1px #d5351d;
+}
+.wrapper .two {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: -60px;
+}
+.wrapper .two img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 33px -4px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+  transition: 100ms;
+}
+.wrapper .two img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 53px -10px rgba(0, 0, 0, 0.38);
+}
+.wrapper .two .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.wrapper .two .row .square {
+  width: 33%;
+  height: 275px;
+  padding: 10px;
+}
+.wrapper .two .row .rectangle-large {
+  padding: 10px;
+  width: 66.5%;
+  height: 275px;
+}
+.wrapper .two .row .rectangle-small {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+.wrapper .two .row .rectangle-small img {
+  height: 100%;
+}
+.wrapper .two .row .square-double-rec {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 275px;
+}
+.wrapper .two .row .rectangle-full {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+}
+.wrapper .two .row .rectangle-full img {
+  height: 100%;
+  height: 100%;
+}
+.wrapper .three {
+  width: 100%;
+  background: url("https://kek.gg/i/79c-xJ.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: inset 0px 0px 5px 2000px rgba(255, 255, 255, 0.55);
+}
+.wrapper .three form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.wrapper .three form h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 35px;
+  border-bottom: solid 2px #d5351d;
+  margin-bottom: 10px;
+}
+.wrapper .three form input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+.wrapper .three form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+.wrapper .three form button {
+  cursor: pointer;
+  background: #d5351d;
+  border: solid 2px rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  color: #F5F4F2;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.wrapper .three form button:hover {
+  opacity: 1;
+}
+.wrapper .four {
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper .four .inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+.wrapper .four .inner h3 {
+  font-size: 26px;
+}
+.wrapper .four .inner .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .four .inner .row .item {
+  width: 20%;
+  text-align: center;
+  border: solid 1px;
+  min-width: 120px;
+  margin: 5px;
+}
+.wrapper .four .inner .row .item img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.wrapper .four .inner .row .item a {
+  display: inline-block;
+  background: #d5351d;
+  padding: 5px 10px;
+  border: solid 1px #d5351d;
+  transition: 100ms;
+  margin-bottom: 10px;
+  color: white;
+}
+.wrapper .four .inner .row .item a:hover {
+  background: #F5F4F2;
+  color: #d5351d;
+  border: solid 1px #d5351d;
+}
+.wrapper footer {
+  margin-top: 30px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  height: auto;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+}
+.wrapper footer h1 {
+  color: black;
+  letter-spacing: 5px;
+}
+.wrapper footer h1 span {
+  color: #d5351d;
+}
+.wrapper footer ul {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  border-top: solid 2px #d5351d;
+  border-bottom: solid 2px #d5351d;
+  padding: 10px;
+}
+.wrapper footer ul li:hover {
+  color: #D5351D;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.wrapper p {
+  padding: 10px;
+  opacity: 0.7;
+}
