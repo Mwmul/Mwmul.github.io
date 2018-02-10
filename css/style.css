@@ -38,7 +38,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  transition: 0.7s linear;
   padding: 40px;
   overflow: hidden;
   animation: loadIn 1s; }
