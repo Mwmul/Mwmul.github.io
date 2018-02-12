@@ -192,8 +192,8 @@ a {
     }
     .portfolio img {
       width: 100%;
-      object-fit: cover;
-      min-height: 150px;
+    
+      max-height: 350px;
       border: solid 1px black;
     }
     .portfolio h3 {
